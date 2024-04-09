@@ -1,0 +1,1 @@
+The files of “candidate.rar” and “file.rar” need to be unzipped under the folder of the “train”. And the files of “input_set.txt” and “output_set.txt” were the subdataset of training set, which is used to evaluate its accuracy as the time cost for evaluating the whole training set is large.
