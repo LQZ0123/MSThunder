@@ -630,8 +630,8 @@ data_train = DataLoader("./file/strinput.txt", "./file/stroutput.txt", mode = 't
 data_loader_train = torch.utils.data.DataLoader(data_train, batch_size=BATCH_SIZE, pin_memory=True, \
         num_workers=2, drop_last=True, shuffle=True)\
 
-data_train2 = DataLoader(evalset_path, evaltarget_path, mode = 'eval')
-data_loader_train2 = torch.utils.data.DataLoader(data_train2, batch_size=BATCH_SIZE, pin_memory=True, \
+data_train2 = DataLoader(evalset_path1, evaltarget_path1, mode = 'eval')
+data_loader_train2 = torch.utils.data.DataLoader(data_train2, batch_size=64, pin_memory=True, \
         num_workers=2, drop_last=True, shuffle=True)
     
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
