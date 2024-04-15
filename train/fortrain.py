@@ -535,8 +535,8 @@ data_train = DataLoader("./file/for_input.txt", "./file/for_output.txt", mode = 
 data_loader_train = torch.utils.data.DataLoader(data_train, batch_size=BATCH_SIZE, pin_memory=True, \
         num_workers=2, drop_last=True, shuffle=True)\
 
-data_train2 = DataLoader('./file/for_input_set.txt','./file/for_output_set.txt', mode = 'eval')
-data_loader_train2 = torch.utils.data.DataLoader(data_train2, batch_size=BATCH_SIZE, pin_memory=True, \
+data_train2 = DataLoader(evalset_path,evaltarget_path, mode = 'eval')
+data_loader_train2 = torch.utils.data.DataLoader(data_train2, batch_size=64, pin_memory=True, \
         num_workers=2, drop_last=True, shuffle=True)
 
 'tensorboard'
