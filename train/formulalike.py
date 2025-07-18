@@ -46,13 +46,11 @@ def match(input_file):
                             elif o_ > 3:
                                 score_o = 0 
                             score_element = torch.dot(cand_tensor[:-1],element_list[:-1])
-                            '得分为元素之间点乘+氧元素差值为2权重'
                             try:
                                 score.append(score_element+score_o)
                             except:
                                 import ipdb;ipdb.set_trace()
                         final_formula = cand_formula[int(np.flipud(np.argsort(score)[-1:]))]
-                        "这里可能出现最大值相同的情况"
                     if final_formula == trg_formula:
                         correction_number += 1
                     if final_formula != trg_formula:
