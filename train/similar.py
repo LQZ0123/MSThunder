@@ -123,7 +123,6 @@ def calculation(formula,pre,trg):
     if pre in candidate and pre == trg:             
         t0 = 1
     else:
-        
         score_weight = fp()
         _,smile_total = score_weight.search_smile()
         score_w = score_weight.get_score()   
@@ -140,7 +139,6 @@ def calculation(formula,pre,trg):
         top9 = []
         top10 = []
         for i in candidate:
-            "这个地方应该还可以再做优化"
             fingerprint_i = torch.tensor(list(map(float,fingerprint_dict1[i])))
             score_i = torch.mul(fingerprint_i,score_w)
             score = torch.dot(score_pre, score_i)
@@ -251,29 +249,4 @@ def accuracy():
         print(i,round((i/n1*100),2))
     return result_list
 
-# def lookuptrain(result_list):
-#     existlist = []
-#     result_list_temp = []
-#     trglist = [i.split(':')[2] for i in result_list] 
-#     for i,element in enumerate(trglist):
-#         with open(outputfile,'r') as f:
-#             for line in f.readlines():
-#                 if 'compound' in line:
-#                     n = 2
-#                 if n == 1:
-#                     trgsmile = replacex(line.strip())
-#                     if trgsmile == element:
-#                         existlist.append(i+1)
-#                         break
-#                 n -= 1
-#     for i in result_list:
-#         if int(i.split(':')[0]) in existlist:
-#             result_list_temp.append(i+':1\n')
-#         else:
-#             result_list_temp.append(i+':0\n')
-#     with open('./result_{0}'.format(input_file[2:]),'w') as f:
-#         for i in result_list_temp:
-#             f.write(i)
-#     return existlist
 result_list = accuracy()
-# existlist = lookuptrain(result_list)
