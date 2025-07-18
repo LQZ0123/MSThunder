@@ -24,8 +24,7 @@ class DataLoader(data.Dataset):
         input = self.aug_mask(input)
         return input, label
     
-    def aug_shift1(self, input, p=0.5):
-        
+    def aug_shift1(self, input, p=0.5):   
         if random.random() > p:
             return input
         start_id = 1
@@ -44,8 +43,7 @@ class DataLoader(data.Dataset):
         input = temp_tensor
         return input
     
-    def aug_mask(self, input, p=0.5):
-        
+    def aug_mask(self, input, p=0.5):    
         if random.random() > p:
             return input
         start_id = 1
