@@ -233,8 +233,7 @@ class DataLoader(data.Dataset):
             try:
                 smile_list[i+1] = look_up[smile[i]]
             except:
-                print(len(smile))
-                import ipdb;ipdb.set_trace()            
+                print(len(smile))            
         smile_list[len(smile)+1] = '42'
         return smile_list
 
