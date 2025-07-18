@@ -9,8 +9,6 @@ from torch.utils.tensorboard import SummaryWriter
 from warmup_scheduler import GradualWarmupScheduler
 from strdata import DataLoader
 from tqdm import tqdm
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
 import spacy
 import numpy as np
 import random
