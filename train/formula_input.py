@@ -301,7 +301,6 @@ def subformulamatch(sample,item_number,mode):
                                     formula_result = Ctotal_number_max[0]
                                 elif len(Ctotal_number_max) > 1:
                                     formula_result = random.choice(Ctotal_number_max)                                 
-                                    
                         form.append(formula_result)
                         mz.append(mz_actual)
                         intensity.append(float(line.strip().split()[1]))
