@@ -65,10 +65,8 @@ class fp_search():
             score[i] = 1
         for i,element in enumerate(score_temp):
             score[i+11] = element
-            
         return score
         
-
     def number(self, smile):
         fingerprint = torch.zeros((2190))
         number_temp = []
