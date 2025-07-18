@@ -16,6 +16,6 @@ Candidate: Double-click the retention time to obtain the MS1 spectrum of the cor
 
 Ranking: Double-click any piece of data to display the structure information diagram in the Structure section. 
 
-Note:If the image display encounters issues, it may be fixed to decrease the computer's display ratio.
+Note: If the image display encounters issues, it may be fixed to decrease the computer's display ratio.
 
 The model and interface of MSThunder were written by Python 3.10.5 with associated packages, consisting of PySide6 6.6.0, torch 1.13.0+cu116, numpy 1.23.4, matplotlib 3.6.2, rdkit 2023.9.2, adjustText 0.8, tqdm 4.64.1, pubchempy 1.0.4 and pandas 1.5.0.
