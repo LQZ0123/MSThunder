@@ -25,7 +25,6 @@ class DataLoader(data.Dataset):
         
         input = self.aug_scale(input)
         input = self.aug_shift1(input)
-        
         return input, label
     
     def aug_scale(self, input, p=0.5):
