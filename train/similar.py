@@ -241,8 +241,7 @@ def accuracy():
                         for i,element in enumerate(resultlisttemp):
                             if element == 1:
                                 result_list.append(str(num)+':'+formula+':'+trg+':'+pre+':'+str(i))
-                                break
-                        
+                                break 
             x -= 1
     accuracy_rate = [at0,at0+at1,at0+at2,at0+at3,at0+at4,at0+at5,at0+at6,at0+at7,at0+at8,at0+at9,at0+at10]
     for i in accuracy_rate:
