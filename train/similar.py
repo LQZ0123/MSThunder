@@ -233,7 +233,6 @@ def accuracy():
                     at8 += at8_temp
                     at9 += at9_temp
                     at10 += at10_temp
-                    "判断每一个是否正确"
                     resultlisttemp = [at0_temp,at1_temp,at2_temp,at3_temp,at4_temp,at5_temp,at6_temp,at7_temp,at8_temp,at9_temp,at10_temp]
                     if sum(resultlisttemp) == 0:
                         result_list.append(str(num)+':'+formula+':'+trg+':'+pre+':'+'100')
